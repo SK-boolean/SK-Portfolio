@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Subham Kundu</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+
+    h2 {
+      color: #58a6ff;
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    .project-card {
+      background-color: #161b22;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      animation: float 6s ease-in-out infinite;
+    }
+
+    .project-card:hover {
+      transform: translateY(-10px) scale(1.03);
+      box-shadow: 0 10px 25px rgba(88, 166, 255, 0.4);
+    }
+
+    .project-content {
+      padding: 1.2rem;
+    }
+
+    .project-card h3 {
+      color: #58a6ff;
+      margin-bottom: 0.5rem;
+      font-size: 1.2rem;
+    }
+
+    .project-card p {
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    /* Floating motion animation */
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+      100% { transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+   <nav>
+    <h2 class="logo">Subham Kundu</h2>
+    <ul>
+      <li style="margin-right: 20px;"><a href="index.html">Home</a></li>
+      <li style="margin-right: 20px;"><a href="about.html">About</a></li>
+      <li style="margin-right: 20px;"><a href="skills.html" >Skills</a></li>
+      <li style="margin-right: 20px;"><a href="portfolio.html" class="active">Portfolio</a></li>
+      <li style="margin-right: 20px;"><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="content bounce">
+    <h2>My Projects</h2>
+    <p style="color:#8b949e;">A showcase of my latest projects</p>
+
+    <div class="project-grid">
+
+      <div class="project-card">
+        <div class="project-content">
+          <h3>Simple Calculator</h3>
+          <p>A fully functional calculator app using HTML, CSS, and JavaScript with smooth UI transitions.</p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-content">
+          <h3>Password Generator</h3>
+          <p>Generates secure passwords with custom rules for uppercase, lowercase, numbers, and symbols.</p>
+        </div>
+      </div>
+
+      <div class="project-card">
+       
+        <div class="project-content">
+          <h3>Quiz Game</h3>
+          <p>An interactive quiz built with JavaScript that tracks your score and progress in real-time.</p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        
+        <div class="project-content">
+          <h3>Expense Tracker</h3>
+          <p>Track your income and expenses easily with live balance updates and category insights.</p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        
+        <div class="project-content">
+          <h3>Personal Portfolio Page</h3>
+          <p>A responsive dark-themed portfolio built from scratch showcasing all my projects and skills.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer></footer>
+
+</body>
+</html>

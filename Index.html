@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | Subham Kundu</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 3rem 2rem;
+      flex-wrap: wrap; 
+    }
+
+    .hero-text {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .hero-text h1 {
+      font-size: 2.5rem;
+      color: #58a6ff;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-text h2 {
+      font-size: 1.2rem;
+      color: #8b949e;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-text p {
+      max-width: 600px;
+      margin-left: 2rem;
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #c9d1d9;
+    }
+
+    .hero-image {
+      flex: 1;
+      text-align: right;
+      min-width: 280px;
+    }
+
+    .hero-image img {
+      width: 80%;
+      max-width: 350px;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+      margin-right: 100px;
+      clip-path: circle(42%);
+    }
+    .cta {
+  animation: bounce 1.2s ease-out;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0) scaleY(1.0);
+  }
+  30% {
+    transform: translateY(-100px) scaleY(1.1);
+  }
+  50% {
+    transform: translateY(0) scaleY(0.9);
+  }
+  70% {
+    transform: translateY(-50px) scaleY(1.05);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <nav>
+    <h2 class="logo">Subham</h2>
+    <ul>
+      <li style="margin-right: 20px;"><a href="index.html" class="active">Home</a></li>
+      <li style="margin-right: 20px;"><a href="about.html">About</a></li>
+      <li style="margin-right: 20px;"><a href="skills.html">Skills</a></li>
+      <li style="margin-right: 20px;"><a href="portfolio.html">Portfolio</a></li>
+      <li style="margin-right: 20px;"><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1 style="font-family: Algerian" >Welcome to My Portfolio</h1>
+      <h2><span class="glow-once">Aspiring Full Stack Developer</span></h2>
+      <p style="font-family: Copperplate Gothic Bold; font-size: 30px;">
+        Hello there! 👋 <br> I’m <strong><I>Subham Kundu</I></strong>
+      </p><br><br><br><br>
+      <div class="bounce">
+        <a href="about.html" download>About Me</a>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <img src="me2.jpg" alt="Subham Kundu">
+    </div>
+  </section>
+  <footer></footer>
+
+</body>
+</html>
