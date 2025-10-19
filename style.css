@@ -103,6 +103,12 @@ nav a:hover {
     transform: translateY(0);
   }
 }
+.grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      justify-items: center;
+    }
 
 /* General Content */
 .section-title {
@@ -174,5 +180,6 @@ footer {
   background-color: #161b22;
   margin-top: 3rem;
 }
+
 
 
